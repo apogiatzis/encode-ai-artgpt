@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LaughLab
+**Encode - AI Bootcamp - Week 2 Project**
 
-## Getting Started
+This project implements a simple Next.JS application that utilises Vercel's AI SDK to generate jokes based on some user configurable settings. It calls an OpenAI API so it can be used with OpenAI itself or any other LLM API that implements the OpenAI Completion API interface.
 
-First, run the development server:
+![LaughLab Screenshot](./assets/artgpt_screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Group Members' IDs
+- **76tsNrC**
+- **ipJZCWC**
+- **s0qmoqC**
+- **3nmWtwC**
+- **XLiUjNC**
+
+## Get Started
+
+### Cloning the Repository
+
+Clone the repo
+```
+git clone https://github.com/apogiatzis/encode-ai-artgpt && cd encode-ai-artgpt
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies
+```
+npm ci
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+In order for the application to work you will have to setup environment variables for OpenAI API. these can be set directly in your terminal or via a `.env` file. See [.env.example](./.env.example) for an example.
+```
+OPENAI_KEY="sk..." # OpenAI API Key
+ASSINSTANT_ID='...' # OpenAI Assistant ID - this has to be created and configured before hand
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Run NextJS
+```
+npm run dev 
+```
