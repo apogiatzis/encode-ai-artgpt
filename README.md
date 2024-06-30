@@ -1,9 +1,9 @@
-# LaughLab
-**Encode - AI Bootcamp - Week 2 Project**
+# ArtGPT
+**Encode - AI Bootcamp - Week 3 Project**
 
-This project implements a simple Next.JS application that utilises Vercel's AI SDK to generate jokes based on some user configurable settings. It calls an OpenAI API so it can be used with OpenAI itself or any other LLM API that implements the OpenAI Completion API interface.
+This project implements a simple Next.JS application that utilises Vercel's AI SDK and OpenAI SDK (Assistant API and Image Generation) to generate painting descriptions based on user input and a pre-selected painting theme. 
 
-![LaughLab Screenshot](./assets/artgpt_screenshot.png)
+![ArtGPT Screenshot](./assets/artgpt_screenshot.png)
 
 ## Group Members' IDs
 - **76tsNrC**
